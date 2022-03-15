@@ -2,26 +2,32 @@ import React from 'react'
 import styled from 'styled-components'
 import Tweeter from './Tweeter'
 import Image from 'next/image'
+
 const Main = styled.div`
   background-color: #041730;
   padding-top: 80px;
   padding-left: 90px;
   padding-right: 90px;
   padding-bottom: 50px;
+  width: 100vw;
   @media only screen and (max-width: 800px) {
-      padding: 10px 30px;
+      padding: 10px;
     }
 `
 const Container = styled.div`
    display: flex;
    gap: 20px;
+   width: 100%;
    @media only screen and (max-width: 800px) {
       flex-direction: column;
-      width: 80%;
     }
 `
 const Left = styled.div`
 flex: 50%;
+@media only screen and (max-width: 800px) {
+  flex: 1;
+
+    }
 
 `
 const LeftContainer = styled.div`
@@ -76,13 +82,14 @@ flex: 50%;
 `
 const TwitterHolder = styled.div`
  @media only screen and (max-width: 800px) {
-     width: 100%;
+     /* width: 100%; */
     }
 `
 const NewsletterForm = styled.form`
 display: flex;
 margin-top: 20px;
 margin-bottom: 20px;
+width: 100%;
 `
 const Input = styled.input`
 flex: 1;
@@ -90,6 +97,7 @@ padding: 15px 22px;
 border-radius: 5px;
 outline: none;
 border: 0;
+width: 100%;
 
 `
 const SendBtn = styled.button`
@@ -118,11 +126,10 @@ const SocialIconImage = styled.img`
 const Footer = () => {
   return (
     <Main>
-
     <Container>
       <Left>
           <LeftContainer>
-                <div>
+                <>
                 <Title>NJc at a glance</Title>
                   <IntroText>
                       The National Judicial Council 
@@ -131,8 +138,8 @@ const Footer = () => {
                       of the Federal Republic of Nigeria.
                     </IntroText>
                     <BtnReadMore>Read More</BtnReadMore>
-                </div>
-                <div>
+                </>
+                <>
                 <Title>click links to view</Title>
                      <MenuList>
                        <ListItem>Supreme Court of Nigeria</ListItem>
@@ -147,7 +154,7 @@ const Footer = () => {
                        <ListItem>Westlaw International</ListItem>
                        <ListItem>National Judicial Institute</ListItem>
                      </MenuList>
-                  </div>
+                  </>
           </LeftContainer>       
       </Left>
       <Right>
