@@ -27,7 +27,7 @@ export default function Home() {
        <CouncilMembers />
        <RulesAndRegulation />
        <ManagementStaff />
-       {/* <Visitors /> */}
+       <Visitors />
     </Container>
   )
 }
