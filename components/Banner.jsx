@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    height: 100vh;
     background: url('./img/background.png');
     background-size: cover;
     object-fit: contain;

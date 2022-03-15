@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CountUp from 'react-countup'
 const Wrapper = styled.div`
     background: url('./img/rules.jpeg');
+    /* height: 505px; */
     margin-bottom: 100px;
     padding: 100px;
 
