@@ -7,15 +7,16 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 125px;
+    padding: 100px;
+    margin: 30px 0;
     gap: 20px;
     @media only screen and (max-width: 800px) {
         flex-direction: column;
         padding: 0;
-        width: 100%;
     }
 
 `
+
 const Container = styled.div`
     width: 517px;
     height: 300px;
@@ -23,15 +24,20 @@ const Container = styled.div`
     background-color: #FFF;
     padding-right: 50px;
     padding-left: 30px;
+    padding: 10px;
     @media only screen and (max-width: 800px) {
-        padding: 0 10px;
+        padding:10px 20px;
         width: 100%;
+        margin:20px 0;
     }
+`
+const Contents = styled.div`
+    
 `
 const Hr = styled.hr`
     height: 0;
-   border: 1px solid rgba(119, 119, 119, 0.24);
-   background-color: rgba(119, 119, 119, 0.24);
+    border: 1px solid rgba(119, 119, 119, 0.24);
+    background-color: rgba(119, 119, 119, 0.24);
     margin: 25px;
     @media only screen and (max-width: 800px) {
       display: none;
@@ -84,6 +90,7 @@ const MenuList = styled.ul`
       @media only screen and (max-width: 800px) {
       padding: 0 10px;
       width: 80%;
+      margin: 10px;
     }
     
 `
@@ -97,13 +104,14 @@ const ListItem = styled.li`
      font-size: 14px;
     }
     `
-    const Contents = styled.div`
-       display: flex;
-       flex-direction: column;
-       padding: 10px;
-       gap: 10px;
-    
-    `
+  const ReadMore = styled.div`
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    span {
+        margin-left: '10px'
+    }
+  `
 const IntroText = styled.p`
     width: 400px;
     margin-left: 80px;
@@ -114,15 +122,15 @@ const IntroText = styled.p`
     word-wrap: break-word;
     margin-bottom: 20px;
     display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        @media only screen and (max-width: 800px) {
-      /* display: none; */
-      width: 80%;
-      font-size: 14px;
-
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    @media only screen and (max-width: 800px) {
+        width: 80%;
+        font-size: 14px;
+        margin: 10px;
     }
 `
 const RulesAndRegulation = () => {
@@ -131,53 +139,39 @@ const RulesAndRegulation = () => {
         <Contents>
             <Container>
                 <Details>
-                    <Icon src='./img/rulesIcon.svg' alt='' />
-                    <HeaderText>RULES AND REGULATIONS</HeaderText>
-                    
+                <Icon src='./img/rulesIcon.svg' alt='' />
+                    <HeaderText>RULES AND REGULATIONS</HeaderText> 
                 </Details>
-                    <MenuList>
+                <MenuList>
                         <ListItem>Procedural Rules</ListItem>
                         <ListItem>Code of Conduct</ListItem>
                         <ListItem>Discipline Regulations</ListItem>
                         <ListItem>NJC Policy</ListItem>
                     </MenuList>  
-                    <div style={{
-                            float: 'right',
-                            cursor: 'pointer',
-                           
-                        }}>Read More 
-                        <span style={{
-                            marginLeft: '10px',
-                            marginTop: '30px',
-                        }}>
-                           <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
+                   <ReadMore> 
+                       Read More
+                        <span>
+                            <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
                         </span>
-                    </div>
+                    </ReadMore>
             </Container>
         <Hr />
             <Container>
-
             <Details>
-                    <Icon src='./img/appointmentIcon.svg' alt='' />
+            <Icon src='./img/appointmentIcon.svg' alt='' />
                     <HeaderText>APPOINTMENT RULES</HeaderText>
-                    
                 </Details>
-                   <IntroText>
+                <IntroText>
                         Extant revised NJC Guidelines and 
                         Procedural rules for the appointment of Judicial Officers 
                         of all superior courts of record in Nigeria are as follows:
                    </IntroText>
-                    <div style={{
-                            float: 'right',
-                            marginTop: '30',
-                            cursor: 'pointer'
-                        }}>Read More 
-                        <span style={{
-                            marginLeft: '10px'
-                        }}>
+                   <ReadMore> 
+                       Read More
+                        <span>
                             <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
                         </span>
-                    </div>
+                    </ReadMore>
             </Container>
         </Contents>
 
@@ -186,51 +180,42 @@ const RulesAndRegulation = () => {
         <Contents>
             <Container>
             <Details>
-                    <Icon src='./img/committeeIcon.svg' alt='' />
-                    <HeaderText>COMMITTEES IN NJC</HeaderText>
-                    
-                </Details>
-                   <IntroText>
-                   Interview of Nominees for Appointment as Judicial
-                    Officers of Superior Courts of Record.
-                    Review of The 1999 Constitution.
-                   </IntroText>
-                    <div style={{
-                            float: 'right',
-                            marginTop: '30',
-                            cursor: 'pointer'
-                        }}>Read More 
-                        <span style={{
-                            marginLeft: '10px'
-                        }}>
-                            <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
-                           </span>
-                    </div>
-            </Container>
-        <Hr />
-            <Container>
-            <Details>
-                    <Icon src='./img/judicialIcon.svg' alt='' />
+            <Icon src='./img/judicialIcon.svg' alt='' />
                     <HeaderText>NATIONAL JUDICIAL POLICY   </HeaderText>
-                    
                 </Details>
-                   <IntroText>
+                <IntroText>
                    The National Judicial Council is a
                     body established under section 153(1)
                     of the Constitution with power relating to 
                     appointments and exercise of displinary..
                    </IntroText>
-                    <div style={{
-                            float: 'right',
-                            marginTop: '30',
-                            cursor: 'pointer'
-                        }}>Read More 
-                        <span style={{
-                            marginLeft: '10px'
-                        }}>
-                          <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
+                   <ReadMore> 
+                       Read More
+                        <span>
+                            <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
                         </span>
-                    </div>
+                    </ReadMore>
+           
+            </Container>
+        <Hr />
+            <Container>
+            <Details>
+                    <Icon src='./img/committeeIcon.svg' alt='' />
+                    <HeaderText>COMMITTEES IN NJC</HeaderText>   
+                </Details>
+                <IntroText>
+                   The National Judicial Council is a
+                    body established under section 153(1)
+                    of the Constitution with power relating to 
+                    appointments and exercise of displinary..
+                   </IntroText>
+                   <ReadMore> 
+                       Read More
+                        <span>
+                            <Image src="/img/readMoreIcon.svg" alt="" width={13} height={12}/>
+                        </span>
+                    </ReadMore>
+           
             </Container>
         </Contents>
     </Wrapper>

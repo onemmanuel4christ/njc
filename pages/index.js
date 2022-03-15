@@ -7,11 +7,16 @@ import RulesAndRegulation from '../components/RulesAndRegulation'
 import Visitors from '../components/Visitors'
 import WelcomeAddress from '../components/WelcomeAddress'
 import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
 
-
+const Container = styled.div`
+width: 100%;
+box-sizing: border-box;
+/* background-color: red; */
+`
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>NJC | Home </title>
         <meta name="description" content="dynamic judiciary in nigeria" />
@@ -22,7 +27,7 @@ export default function Home() {
        <CouncilMembers />
        <RulesAndRegulation />
        <ManagementStaff />
-       <Visitors />
-    </div>
+       {/* <Visitors /> */}
+    </Container>
   )
 }

@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import styled from 'styled-components'
 
 const Container = styled.div`
+
 `
 const Layout = ({children}) => {
   return (
