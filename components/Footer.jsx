@@ -129,7 +129,7 @@ const Footer = () => {
     <Container>
       <Left>
           <LeftContainer>
-                <>
+                <div>
                 <Title>NJc at a glance</Title>
                   <IntroText>
                       The National Judicial Council 
@@ -138,8 +138,8 @@ const Footer = () => {
                       of the Federal Republic of Nigeria.
                     </IntroText>
                     <BtnReadMore>Read More</BtnReadMore>
-                </>
-                <>
+                </div>
+                <div>
                 <Title>click links to view</Title>
                      <MenuList>
                        <ListItem>Supreme Court of Nigeria</ListItem>
@@ -154,7 +154,7 @@ const Footer = () => {
                        <ListItem>Westlaw International</ListItem>
                        <ListItem>National Judicial Institute</ListItem>
                      </MenuList>
-                  </>
+                  </div>
           </LeftContainer>       
       </Left>
       <Right>

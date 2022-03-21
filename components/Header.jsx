@@ -87,13 +87,9 @@ const Mail = styled.div`
     }
 `
 const MenuList = styled.div`
-    /* position: absolute; */
     background-color: #05A850;
     padding: 41px 20px;
     align-items: center;
-    /* top: 150px; */
-    /* left: 218px; */
-    /* right: 218px; */
     display: flex;
     justify-content: center;
     gap: 15px;
