@@ -67,6 +67,9 @@ const SlideBtn = styled.img`
     border-radius: 17px;
     cursor: pointer;
     margin-top: 67px;
+    @media only screen and (max-width: 800px) {
+      display: none;
+  }
 `
 const Banner = () => {
   return (

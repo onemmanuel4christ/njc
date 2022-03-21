@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import "antd/dist/antd.css";
 import { Menu, Dropdown } from 'antd';
-import { MenuItems } from './MenuItems';
 import Link from 'next/link';
+import { AiOutlineClose } from "react-icons/Ai";
 
 const Container = styled.div`
     background-color: #FFFFFF;
@@ -48,7 +48,6 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   @media only screen and (max-width: 800px) {
-    /* display: none; */
 }
 `
 const MenuBtn = styled.div`
@@ -94,8 +93,13 @@ const MenuList = styled.div`
     justify-content: center;
     gap: 15px;
     color: #FFF;
+    gap: 30px;
     text-transform: uppercase;
-    
+    @media only screen and (max-width: 800px) {
+    padding: 30px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
 `
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -115,17 +119,131 @@ console.log(openMenu)
             </Title>
         </Left>
         <Right>
-            {openMenu ? <div onClick={()=>setOpenMenu(open => !openMenu)}>X</div> : <MenuBtn onClick={()=>setOpenMenu(open => !openMenu)}/>}
+            {openMenu ? <div onClick={()=>setOpenMenu(open => !openMenu)}> <AiOutlineClose /> </div> : <MenuBtn onClick={()=>setOpenMenu(open => !openMenu)}/>}
            
         </Right>
       </Container>
      {
          openMenu &&  
          <MenuList>
-            <Menu>Menu 1</Menu>
-            <Menu>Menu 1</Menu>
-            <Menu>Menu 1</Menu>
-            <Menu>Menu 1</Menu>
+            <Menu style={{
+                color: '#FFF',
+                }}>
+                <Link href='/'>
+                        <a style={{
+                        color: '#FFF',
+                }}>
+                            Home
+                        </a>
+                </Link>
+            </Menu>
+            <Dropdown 
+              overlay={(
+                <Menu>
+                    <Menu.Item>
+                <Link href='profile'>
+                    <a>
+                      Porfile of NJC
+                    </a>
+                </Link>
+
+                    </Menu.Item>   
+                    <Menu.Item>
+                    Composition of NJC
+                    </Menu.Item>    
+                    <Menu.Item>
+                    Structure of NJC
+                    </Menu.Item>
+                    <Menu.Item>
+                    Committee of NJC
+                    </Menu.Item>
+                    <Menu.Item>
+                    Current council Members
+                    </Menu.Item>
+                    <Menu.Item>
+                    Management Staff
+                    </Menu.Item>
+                </Menu>
+              )}
+              trigger={['hover']}>
+                <div>
+                        About NJC
+                      <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
+                </div>
+            </Dropdown>
+            <Dropdown 
+              overlay={(
+                <Menu>
+                    <Menu.Item>
+                    Current Council Chairman
+                    </Menu.Item>   
+                    <Menu.Item>
+                    Past Council Chairmen
+                    </Menu.Item>    
+                </Menu>
+              )}
+              trigger={['hover']}>
+                <div>
+                        Judiciary
+                      <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
+                </div>
+            </Dropdown>
+            <Dropdown 
+              overlay={(
+                <Menu>
+                    <Menu.Item>
+                    NJC Guidelines & Procedural Rules
+                    </Menu.Item>   
+                    <Menu.Item>
+                    Code of Conducts
+                    </Menu.Item>    
+                    <Menu.Item>
+                    Discipline Regulations
+                    </Menu.Item>   
+                    <Menu.Item>
+                    NJC Policy
+                    </Menu.Item>    
+                </Menu>
+              )}
+              trigger={['hover']}>
+                <div>
+                NJC Guidelines
+                      <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
+                </div>
+            </Dropdown>
+            <Dropdown 
+              overlay={(
+                <Menu>
+                    <Menu.Item>
+                    News & Events
+                    </Menu.Item>   
+                    <Menu.Item>
+                    Press Release
+                    </Menu.Item>    
+                    <Menu.Item>
+                    Picture Gallary
+                    </Menu.Item>   
+                    <Menu.Item>
+                    Video Gallery
+                    </Menu.Item>    
+                </Menu>
+              )}
+              trigger={['hover']}>
+                <div>
+               MEDIA
+                      <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
+                </div>
+            </Dropdown>
+            <Menu style={{
+                color: '#FFF',
+                }}>
+                    FAQ
+            </Menu>
+            <Menu style={{
+                color: '#FFF',
+                }}>
+                    CONTACT US
+            </Menu>
          </MenuList>
      }
       </>
