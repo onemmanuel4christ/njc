@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { AiOutlineClockCircle, AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram } from "react-icons/Ai"
-import { MdOutlineFacebook } from "react-icons/Md"
+import { AiOutlineClockCircle, AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram } from "react-icons/ai"
+import { MdOutlineFacebook } from "react-icons/md"
 const Wrapper = styled.div`
 border-bottom:  2px solid rgba(119, 119, 119, 0.25);
 padding-bottom: 30px;

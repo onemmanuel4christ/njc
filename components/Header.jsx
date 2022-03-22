@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import "antd/dist/antd.css";
 import { Menu, Dropdown } from 'antd';
 import Link from 'next/link';
-import { AiOutlineClose } from "react-icons/Ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Container = styled.div`
     background-color: #FFFFFF;
