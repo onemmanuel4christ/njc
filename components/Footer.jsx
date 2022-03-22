@@ -9,7 +9,6 @@ const Main = styled.div`
   padding-left: 90px;
   padding-right: 90px;
   padding-bottom: 50px;
-  width: 100vw;
   @media only screen and (max-width: 800px) {
       padding: 10px;
     }

@@ -128,10 +128,11 @@ console.log(openMenu)
          <MenuList>
             <Menu style={{
                 color: '#FFF',
-                }}>
+                }} onClick={()=>setOpenMenu(false)}>
                 <Link href='/'>
                         <a style={{
                         color: '#FFF',
+                        cursor: 'pointer'
                 }}>
                             Home
                         </a>
@@ -140,33 +141,56 @@ console.log(openMenu)
             <Dropdown 
               overlay={(
                 <Menu>
-                    <Menu.Item>
+                    <Menu.Item onClick={()=>setOpenMenu(false)}>
                 <Link href='profile'>
-                    <a>
+                    <a >
                       Porfile of NJC
                     </a>
                 </Link>
 
                     </Menu.Item>   
-                    <Menu.Item>
-                    Composition of NJC
+                    <Menu.Item  onClick={()=>setOpenMenu(false)}>
+                    <Link href='composition-of-njc'>
+                        <a>
+                        Composition of NJC
+                        </a>
+                    </Link>
                     </Menu.Item>    
-                    <Menu.Item>
-                    Structure of NJC
+                    <Menu.Item onClick={()=>setOpenMenu(false)}>
+                    <Link href='structure'>
+                        <a>
+                        Structure of NJC
+                        </a>
+                    </Link>
+                    </Menu.Item>
+                    <Menu.Item onClick={()=>setOpenMenu(false)}>
+                    <Link href='committee'>
+                        <a>
+                        Committee of NJC
+                        </a>
+                    </Link>
                     </Menu.Item>
                     <Menu.Item>
-                    Committee of NJC
+                    <Link href='council-member'>
+                        <a>
+                            Current council Members
+                        </a>
+                    </Link>
+                    
                     </Menu.Item>
                     <Menu.Item>
-                    Current council Members
-                    </Menu.Item>
-                    <Menu.Item>
-                    Management Staff
+                    <Link href='mgt-staff'>
+                        <a>
+                        Management Staff
+                        </a>
+                    </Link>                      
                     </Menu.Item>
                 </Menu>
               )}
               trigger={['hover']}>
-                <div>
+                <div style={{
+                    cursor: 'pointer'
+                }}>
                         About NJC
                       <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
                 </div>
@@ -175,15 +199,27 @@ console.log(openMenu)
               overlay={(
                 <Menu>
                     <Menu.Item>
-                    Current Council Chairman
+                    <Link href='/judiciary'>
+                        <a>
+                        Current Council Chairman
+                        </a>
+                    </Link>
+                    
                     </Menu.Item>   
                     <Menu.Item>
-                    Past Council Chairmen
+                    <Link href='/past-council'>
+                        <a>
+                        Past Council Chairmen
+                        </a>
+                    </Link>
+                    
                     </Menu.Item>    
                 </Menu>
               )}
               trigger={['hover']}>
-                <div>
+                <div  style={{
+                    cursor: 'pointer'
+                }}>
                         Judiciary
                       <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
                 </div>
@@ -206,7 +242,9 @@ console.log(openMenu)
                 </Menu>
               )}
               trigger={['hover']}>
-                <div>
+                <div  style={{
+                    cursor: 'pointer'
+                }}>
                 NJC Guidelines
                       <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
                 </div>
@@ -229,18 +267,22 @@ console.log(openMenu)
                 </Menu>
               )}
               trigger={['hover']}>
-                <div>
+                <div  style={{
+                    cursor: 'pointer'
+                }}>
                MEDIA
                       <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
                 </div>
             </Dropdown>
             <Menu style={{
                 color: '#FFF',
+                cursor: 'pointer'
                 }}>
                     FAQ
             </Menu>
             <Menu style={{
                 color: '#FFF',
+                cursor: 'pointer'
                 }}>
                     CONTACT US
             </Menu>

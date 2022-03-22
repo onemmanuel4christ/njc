@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Carousel from 'react-grid-carousel'
 
 const Container = styled.div`
     padding-bottom: 100px;
@@ -153,41 +154,36 @@ const CouncilMembers = () => {
     "/img/pca.png",
   ];
 
-  const handleArrow = (direction) =>{
-      if(direction==="l"){
-          setIndex(index !== 0 ? index-1 : 2)
-      }
-      if(direction==="r"){
-          setIndex(index !== 2 ? index+1 : 0)
-      }
-  }
   return (
     <Container>
         <Title>current council members</Title>
         <Hr />
         <CouncilGallery>
-          <ArrowWrapper style={{ left: 5 }} onClick={()=>handleArrow("l")}> 
-              <Arrow src="/img/leftArrow.svg" alt="" />
-          </ArrowWrapper>
-          <Wrapper style={{transform:`translateX(${-100*index}vw)`}}>
-              {
-                images.map((img, idx) =>(
-              <ImageContainer key={idx}>               
-                <ImageCard src={img} alt='monica' />
-                <DetailsWrapper>
-                  <Rank>hon. justice</Rank>
-                  <FullName>monica borna’an dongban men-sem</FullName>
-                  <Position>president court of appeal.</Position>
-                <Readmore>Read More...</Readmore>
-                </DetailsWrapper>
-           </ImageContainer>
-                ))
-              }
-            
-           </Wrapper>
-        <ArrowWrapper style={{ right: 0 }} onClick={()=>handleArrow("r")}>
-              <Arrow src="/img/rightArrow.svg" alt="" />
-          </ArrowWrapper>
+        <Carousel 
+          cols={4} 
+          rows={1} 
+          gap={10} 
+          loop
+          autoplay={3000}
+          showDots={true}
+          dotColorActive="red"
+        >
+      {
+        images.map((img, idx) =>(
+          <Carousel.Item key={idx}>
+              <ImageContainer>               
+                 <ImageCard src={img} alt='monica' />
+                 <DetailsWrapper>
+                   <Rank>hon. justice</Rank>
+                   <FullName>monica borna’an dongban men-sem</FullName>
+                   <Position>president court of appeal.</Position>
+                 <Readmore>Read More...</Readmore>
+                 </DetailsWrapper>
+            </ImageContainer>
+          </Carousel.Item>
+        ))
+      }
+    </Carousel>
        </CouncilGallery>
     </Container>
   )

@@ -8,6 +8,7 @@ import Visitors from '../components/Visitors'
 import WelcomeAddress from '../components/WelcomeAddress'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
+import GallarySlider from '../components/GallarySlider'
 
 const Container = styled.div`
 width: 100%;
@@ -27,6 +28,8 @@ export default function Home() {
        <RulesAndRegulation />
        <ManagementStaff />
        <Visitors />
+       <GallarySlider />
+      
     </Container>
   )
 }
