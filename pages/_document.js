@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossOrigin="anonymous"></link>
           {/* <title>My page</title> */}
           {/* Step 5: Output the styles in the head  */}
-          {this.props.styleTags}
+          {/* {this.props.styleTags} */}
         </Head>
         <body>
           <Main />

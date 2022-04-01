@@ -14,7 +14,7 @@ const Container = styled.div`
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
     @media only screen and (max-width: 800px) {
     padding: 10px;
     }
@@ -104,7 +104,6 @@ const MenuList = styled.div`
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [active, setActive] = useState(false);
-console.log(openMenu)
   return (
       <>
     <Container>
@@ -179,7 +178,7 @@ console.log(openMenu)
                     
                     </Menu.Item>
                     <Menu.Item>
-                    <Link href='mgt-staff'>
+                    <Link href='management-staff'>
                         <a>
                         Management Staff
                         </a>
@@ -228,7 +227,11 @@ console.log(openMenu)
               overlay={(
                 <Menu>
                     <Menu.Item>
-                    NJC Guidelines & Procedural Rules
+                    <Link href='guides'>
+                        <a>
+                        NJC Guidelines & Procedural Rules
+                        </a>
+                    </Link>
                     </Menu.Item>   
                     <Menu.Item>
                     Code of Conducts
