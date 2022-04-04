@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Carousel from 'react-grid-carousel'
+import Link from 'next/link'
 
 const Container = styled.div`
   display: flex;
@@ -36,7 +37,9 @@ const CardDetails = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  cursor: pointer;
   
   h1{
     text-align: center;
@@ -59,98 +62,146 @@ const CurrentMemberGallery = () => {
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
             <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+              <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
             <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
         <Card>
           <CardImage src='./img/balogun.png' alt='' />
-            <CardDetails>
-            <h1>HON. JUSTICE MONICA BOLNAAN </h1>
-                <h5>DONGBAN-MENSEM</h5>
-            <span>President, Court of Appeal</span>  
+          <CardDetails>
+            <Link href="/member-profile">
+                <a className='link'>
+                <h1>HON. JUSTICE MONICA BOLNAAN </h1>
+                    <h5>DONGBAN-MENSEM</h5>
+                <span>President, Court of Appeal</span>  
+                </a>
+              </Link>
             </CardDetails>
         </Card>
     </Container>

@@ -41,7 +41,7 @@ margin-bottom: 20px;
 
 h1{
     color: #041730;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 10px;
 }
@@ -55,6 +55,7 @@ const TitleWrapper = styled.div`
     h1{
         color: #FFFFFF;
         word-wrap: normal;
+        font-size: 16px;
     }
     `
 const Paragraph = styled.p`

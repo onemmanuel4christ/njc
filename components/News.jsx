@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { AiOutlineClockCircle, AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram } from "react-icons/ai"
 import { MdOutlineFacebook } from "react-icons/md"
+import Link from 'next/link'
 const Wrapper = styled.div`
 border-bottom:  2px solid rgba(119, 119, 119, 0.25);
 padding-bottom: 30px;
@@ -48,7 +49,14 @@ const News = () => {
     <div>
         <Wrapper>
                         <h2>PRESS RELEASE</h2>
-                        <Paragraph>NJC recommends appointment of sixty-four (64) Judiciary officers.</Paragraph>
+                        
+                        <Paragraph>
+                        <Link href='/news-detail' >
+                            <a style={{textDeoration: 'none', color: 'inherit'}}>
+                                NJC recommends appointment of sixty-four (64) Judiciary officers.
+                            </a>
+                         </Link>
+                        </Paragraph>
                         <TimeStamp>
                             <AiOutlineClockCircle />
                             <Time>17th December, 2021.</Time>
@@ -56,7 +64,13 @@ const News = () => {
                     </Wrapper>
                     <Wrapper>
                         <h2>PRESS RELEASE</h2>
-                        <Paragraph>NJC recommends appointment of sixty-four (64) Judiciary officers.</Paragraph>
+                        <Paragraph>
+                        <Link href='/news-detail' >
+                            <a style={{textDeoration: 'none', color: 'inherit'}}>
+                                NJC recommends appointment of sixty-four (64) Judiciary officers.
+                            </a>
+                         </Link>
+                        </Paragraph>
                         <TimeStamp>
                             <AiOutlineClockCircle />
                             <Time>17th December, 2021.</Time>
@@ -64,7 +78,13 @@ const News = () => {
                     </Wrapper>
                     <Wrapper>
                         <h2>PRESS RELEASE</h2>
-                        <Paragraph>NJC recommends appointment of sixty-four (64) Judiciary officers.</Paragraph>
+                        <Paragraph>
+                            <Link href='/news-detail' >
+                                <a style={{textDeoration: 'none', color: 'inherit'}}>
+                                    NJC recommends appointment of sixty-four (64) Judiciary officers.
+                                </a>
+                            </Link>
+                        </Paragraph>
                         <TimeStamp>
                             <AiOutlineClockCircle />
                             <Time>17th December, 2021.</Time>

@@ -63,7 +63,7 @@ const Paragraph = styled.p`
     color: #041730;
     text-align: justify;
     font-weight: 400;
-    line-height: 40px
+    line-height: 40px;
 
 `
 const Hr = styled.hr`

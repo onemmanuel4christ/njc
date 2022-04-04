@@ -41,7 +41,7 @@ margin-bottom: 20px;
 
 h1{
     color: #041730;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 10px;
 }
@@ -56,16 +56,10 @@ const TitleWrapper = styled.div`
         color: #FFFFFF;
         word-wrap: normal;
         text-transform: uppercase;
+        font-size: 16px;
     }
     `
-const Paragraph = styled.p`
-    word-wrap: break-word;
-    font-size: 16px;
-    color: #041730;
-    text-align: justify;
-    font-weight: 400;
 
-`
 const Hr = styled.hr`
    height: 0;
    border: 1px solid rgba(119, 119, 119, 0.25);
@@ -93,33 +87,8 @@ const ListItem = styled.li`
     line-height: 40px;
     opacity: 90%;
 `
-const Heading = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    p{
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-    }
-`
-const OtherFunction = styled.div`
-    margin-bottom: 30px;
-  
-`
 
-const Topic = styled.h5`
-    font-weight: 700;
-    font-size: 16px;
-    color: #041730;
-`
-const Body = styled.p`
-    font-weight: 400;
-    font-size: 16px;
-    color: #041730;
-    opacity: 75%;
-    padding: 0 20px;
-`
+
 
 const Committee = () => {
   return (

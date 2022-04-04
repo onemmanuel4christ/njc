@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding:50px 150px;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    padding: 150px 100px;
     @media only screen and (max-width: 800px) {
       padding: 10px;
       flex-direction: column-reverse;
@@ -13,11 +14,23 @@ const Wrapper = styled.div`
       
     } 
 `
+const Left = styled.div`
+    width: 512px;
+    height: 606px;
+    flex: 1;
+    @media only screen and (max-width: 800px) {
+      width: 80vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      margin: 20px auto;
+    } 
+`
 
 const ImageWraper = styled.img`
-    flex: 50%;
-    width: 28rem;
-    height: 35rem;
+object-fit: cover;
+background-size: contain;
     border: 0;
     box-shadow: 12px 12px 02px -5px rgba(5, 168, 80,1);
     @media only screen and (max-width: 800px) {
@@ -31,12 +44,12 @@ const ImageWraper = styled.img`
 `
 const Right = styled.div`
     text-align: center;
-    flex: 50%;
-    width: 30rem;
-    height: 35rem;
+    /* width: 512px; */
+    /* height: 606px; */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     @media only screen and (max-width: 800px) {
       padding: 10px;
       width: 100%;
@@ -143,7 +156,10 @@ const WelcomeAddress = () => {
   return (
     <>
     <Wrapper>
+        <Left>
+
              <ImageWraper src='./img/tanko.png'/>
+        </Left>
                
 
                  <Right>

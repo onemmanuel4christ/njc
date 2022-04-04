@@ -102,7 +102,7 @@ const MenuList = styled.div`
     }
 `
 const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   const [active, setActive] = useState(false);
   return (
       <>
@@ -127,7 +127,7 @@ const Header = () => {
          <MenuList>
             <Menu style={{
                 color: '#FFF',
-                }} onClick={()=>setOpenMenu(false)}>
+                }}>
                 <Link href='/'>
                         <a style={{
                         color: '#FFF',
@@ -140,7 +140,7 @@ const Header = () => {
             <Dropdown 
               overlay={(
                 <Menu>
-                    <Menu.Item onClick={()=>setOpenMenu(false)}>
+                    <Menu.Item>
                 <Link href='profile'>
                     <a >
                       Porfile of NJC
@@ -148,21 +148,21 @@ const Header = () => {
                 </Link>
 
                     </Menu.Item>   
-                    <Menu.Item  onClick={()=>setOpenMenu(false)}>
+                    <Menu.Item>
                     <Link href='composition-of-njc'>
                         <a>
                         Composition of NJC
                         </a>
                     </Link>
                     </Menu.Item>    
-                    <Menu.Item onClick={()=>setOpenMenu(false)}>
+                    <Menu.Item>
                     <Link href='structure'>
                         <a>
                         Structure of NJC
                         </a>
                     </Link>
                     </Menu.Item>
-                    <Menu.Item onClick={()=>setOpenMenu(false)}>
+                    <Menu.Item>
                     <Link href='committee'>
                         <a>
                         Committee of NJC
@@ -228,27 +228,39 @@ const Header = () => {
                 <Menu>
                     <Menu.Item>
                     <Link href='guides'>
-                        <a>
+                        <a className='link'>
                         NJC Guidelines & Procedural Rules
                         </a>
                     </Link>
                     </Menu.Item>   
                     <Menu.Item>
-                    Code of Conducts
+                        <Link href="/code-of-conducts">
+                            <a className='link'>
+                                Code of Conducts
+                            </a>
+                        </Link>
                     </Menu.Item>    
                     <Menu.Item>
-                    Discipline Regulations
+                        <Link href="/discipline-regulations">
+                            <a className='link'>
+                            Discipline Regulations
+                            </a>
+                        </Link>
                     </Menu.Item>   
                     <Menu.Item>
-                    NJC Policy
+                        <Link href="/njc-policy">
+                            <a className='link'>
+                            NJC Policy
+                            </a>
+                        </Link>
                     </Menu.Item>    
                 </Menu>
               )}
               trigger={['hover']}>
                 <div  style={{
                     cursor: 'pointer'
-                }}>
-                NJC Guidelines
+                }}>   
+                    NJC Guidelines
                       <i className='fas fa-caret-down' style={{marginLeft: '15px'}}/>
                 </div>
             </Dropdown>

@@ -10,12 +10,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: fit-content;
-margin: 0 auto;
+margin: 20px auto;
 margin-bottom: 20px;
 
 h1{
     color: #041730;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 10px;
 }

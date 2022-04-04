@@ -41,15 +41,14 @@ margin-bottom: 20px;
 
 h1{
     color: #041730;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 10px;
 }
 `
 
 const TitleWrapper = styled.div`
-    /* padding:0 10px; */
-    /* background: #041730; */
+
     width: fit-content;
     border-radius: 5px;
     h1{
