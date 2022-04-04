@@ -114,7 +114,7 @@ const MemberProfile = () => {
                     <span> President, Court of Appeal </span>
                </Position>
                     <ImageHolder>
-                       <ProfileImage src='./img/monica.png' /> 
+                       <ProfileImage src='./img/mrs.png' /> 
                     </ImageHolder>
 
                     <Paragraph> 
