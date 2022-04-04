@@ -92,6 +92,9 @@ const ProfileImage = styled.img`
     border-radius: 5px;
     object-fit: cover;
     margin: 0 auto;
+    @media only screen and (max-width: 800px) {
+    width: 80vw;
+    }
 `
 const Position  = styled.div`
    display: flex;
