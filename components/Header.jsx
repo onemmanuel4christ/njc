@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import "antd/dist/antd.css";
 import { Menu, Dropdown } from 'antd';
@@ -104,6 +104,14 @@ const MenuList = styled.div`
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true);
   const [active, setActive] = useState(false);
+  const screenSize = () =>{
+      if(window.innerWidth <= "100px"){
+          setOpenMenu(false)
+      }
+  }
+  useEffect(()=>{
+    screenSize();
+  },[])
   return (
       <>
     <Container>
