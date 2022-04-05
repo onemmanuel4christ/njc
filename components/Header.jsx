@@ -104,20 +104,12 @@ const MenuList = styled.div`
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true);
   const [active, setActive] = useState(false);
-  const screenSize = () =>{
-      if(window.innerWidth <= "100px"){
-          setOpenMenu(false)
-      }
-  }
-  useEffect(()=>{
-    screenSize();
-  },[])
   return (
       <>
     <Container>
            <Left>
         <Link href="/">
-            <a>
+            <a cl>
                  <Logo src="./img/njc-logo.png" alt="NJC LOGO" />
             </a>
         </Link>
@@ -126,9 +118,7 @@ const Header = () => {
             </Title>
         </Left>
         <Right>
-            {openMenu ? <div onClick={()=>setOpenMenu(open => !openMenu)}> <AiOutlineClose /> </div> : <MenuBtn onClick={()=>setOpenMenu(open => !openMenu)}/>}
-           
-        </Right>
+            {openMenu ? <div onClick={()=>setOpenMenu(open => !openMenu)}> <AiOutlineClose /> </div> : <MenuBtn onClick={()=>setOpenMenu(open => !openMenu)}/>}        </Right>
       </Container>
      {
          openMenu &&  
