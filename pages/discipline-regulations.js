@@ -135,9 +135,9 @@ flex-direction: column;
     
 `
 
-const DisciplineRegulation = () => {
-  return (
-    <Container>
+const DisciplineRegulation = () =>{
+    return(
+          <Container>
         <Wrapper>
             <Left>
                <ProfileHeader>
@@ -872,7 +872,7 @@ const DisciplineRegulation = () => {
             </Right>
         </Wrapper>
     </Container>
-  )
+    )
 }
 
 export default DisciplineRegulation
